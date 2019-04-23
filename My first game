@@ -1,0 +1,42 @@
+print("welcome to the game")
+
+user_name = input("What is your name? ")
+
+print("Welcome to paper, rock , scissors, " + user_name + "!")
+weapon_of_choice = input(user_name + ", Paper, Rock, or Scissors? ")
+
+def game_weapons(weapon_of_choice):
+  if weapon_of_choice == "Rock":
+    return "You chose Rock."
+  elif weapon_of_choice == "Paper":
+    return "You chose paper."
+  elif weapon_of_choice == "Scissors":
+    return "You chose Scissors."
+print(game_weapons(weapon_of_choice))
+
+    
+
+
+
+
+import random
+
+answers = ["Paper", "Rock", "Scissors"]
+
+print("The computer chose " +random.choice(answers))
+
+random_value = random.choice(answers)
+
+def winner(weapon_of_choice, random_vaue):
+  "Rock" > "Scissors"
+  "Scissors" > "Paper"
+  "Paper" > "Rock"
+  if random_value > weapon_of_choice:
+    return "The Computer wins"
+  elif weapon_of_choice > random_value:
+    return "You win"
+  else:
+    return "It's a tie!"
+
+print(winner(weapon_of_choice, random_value))
+  
